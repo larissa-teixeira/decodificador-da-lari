@@ -1,0 +1,341 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #FFE1C6;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        height: 100vh; 
+        display: flex; 
+        flex-direction: column; 
+    }
+    
+    /* header */
+    header {
+        width: 100%;
+        background-color: #FFE1C6;
+        padding: 15px;
+    }
+    
+    .alura__logo{
+        padding: 20px;
+    }
+    
+    /* geral */
+    .conteudo-geral {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1; 
+        padding: 20px; 
+    }
+    
+    /* área de entrada */
+    #entrada-texto {
+        width: 100%;
+        height: 100%;
+        margin-top: 5rem;
+        resize: none;
+        color: #0A3871;
+        font-size: 2rem;
+        background: none;
+        border: none;
+    }
+    
+    .entrada {
+        text-align: center;
+        width: 50%;
+    }
+    
+    .entrada-aviso {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .imagem-aviso {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .entrada-botao {
+        display: flex;
+        justify-content: left;
+        gap: 30px;
+        align-self: flex-start;
+    }
+    
+    .texto-container {
+        width: 100%;
+        max-height: 100%;
+        height: 60vh;
+    }
+    
+    /* botões */
+    #botao-crip, #botao-descrip {
+        padding: 15px 30px;
+        border-radius: 50px;
+        cursor: pointer;
+        border: 0;
+        background-color: #916C80;
+        box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        transition: all 0.5s ease;
+        color: white;
+    }
+    
+    #botao-crip:hover, #botao-descrip:hover {
+        letter-spacing: 2px;
+        background-color: #8f5574;
+        box-shadow: #8f667c 0px 3px 20px 0px;
+    }
+    
+    #botao-crip:active, #botao-descrip:active {
+        letter-spacing: 2px;
+        background-color: transparent;
+        color: #8f5574;
+        transform: translateY(3px);
+        transition: 100ms;
+    }
+    
+    /* área de saída */
+    .saida-container {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 75vh;
+        width: 20%; 
+        padding: 20px; 
+        box-sizing: border-box; 
+        overflow: hidden; 
+    }
+    
+    .saida-conteudo {
+        background-color: #fff7ae;
+        border-radius: 32px;
+        width: 100%; 
+        height: 100%; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 20px; 
+        box-sizing: border-box; 
+    }
+    
+    .saida-imagem {
+        display: flex; 
+        justify-content: center; 
+        width: 100%; 
+        padding: 10px; 
+    }
+    
+    .saida-imagem img {
+        max-width: 100%; 
+        height: auto; 
+    }
+    
+    #saida-area {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        width: 100%; 
+        height: 100%; 
+    }
+    
+    #saida-area p {
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    #saida-vazio, #resultado {
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    /* rodapé */
+    footer.criacao {
+        text-align: center;
+        padding: 20px;
+        background-color: #FFE1C6;
+        color: #0A3871;
+    }
+    
+    @media (max-width: 835px){
+        .conteudo-geral {
+            display: block;
+            justify-content: center;
+            width: 100vw; 
+            margin-left: 0; 
+        }
+    
+        .alura__logo{
+            padding: 8px;
+        }
+        
+    
+        .entrada {
+            width: 100%; 
+            display: block;
+        }
+    
+        #entrada-texto {
+            font-size: 1.5rem; 
+        }
+    
+        #botao-crip, #botao-descrip {
+            font-size: 20px; 
+            padding: 20px 9px; 
+            display: block;
+            width: 100%;
+            justify-content: center;
+        }
+    
+        .texto-container {
+            height: 50vh; 
+        }
+    
+        .saida-container {
+            width: 100vw; 
+            max-height: auto; 
+            padding: 20px;
+            margin-top: 20px;
+        }
+    
+        .saida-conteudo {
+            max-width: 95%; 
+            padding: 10px; 
+        }
+    
+        #saida-area p {
+            text-align: center;
+            font-size: 23px;
+            font-weight: 600;
+        }
+        #saida-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        }
+    }
+    
+    
+    
+    @media (max-width: 768px) {
+        .conteudo-geral {
+            display: block;
+            justify-content: center;
+            width: 100vw; 
+            margin-left: 0; 
+        }
+    
+        .alura__logo{
+            padding: 8px;
+        }
+        
+    
+        .entrada {
+            width: 100%; 
+            display: block;
+        }
+    
+        #entrada-texto {
+            font-size: 1.5rem; 
+        }
+    
+        #botao-crip, #botao-descrip {
+            font-size: 20px; 
+            padding: 20px 30px; 
+            display: block;
+            width: 100%;
+            justify-content: center;
+        }
+    
+        .texto-container {
+            height: 50vh; 
+        }
+    
+        .saida-container {
+            width: 100vw; 
+            max-height: auto; 
+            padding: 20px;
+            margin-top: 20px;
+        }
+    
+        .saida-conteudo {
+            max-width: 95%; 
+            padding: 10px; 
+        }
+    
+        #saida-area p {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        #saida-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        #entrada-texto {
+            font-size: 1.2rem; 
+        }
+    
+        .alura__logo{
+            padding: 4px;
+        }
+        
+    
+        #botao-crip, #botao-descrip {
+            font-size: 8px; 
+            padding: 8px 16px; 
+        }
+    
+        .texto-container {
+            height: 25vh; 
+        }
+    
+        .saida-container {
+            width:100%; 
+            max-height: 100%; 
+        }
+    
+        .entrada-botao{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+            
+        }
+    
+        #botao-crip, #botao-descrip{
+            font-size: 15px;
+            padding: 15px;
+        }
+    
+        #saida-area{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            overflow: hidden;
+    }
+    }

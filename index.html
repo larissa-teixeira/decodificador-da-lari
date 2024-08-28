@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Challenge Alura Decodificador</title>
+</head>
+<body>
+   <header>
+        <img class="alura__logo" src="/assets/logoalura.png" alt="logo da alura">
+   </header>
+
+   <main class="conteudo-geral">
+        <section class="entrada">
+            <div class="entrada-container">
+                <div class="texto-container">
+                  <textarea name="texto" id="entrada-texto" cols="40" rows="4" placeholder="Digite aqui sua mensagem"></textarea>
+                </div>
+
+                <div class="entrada-aviso">
+                    <img class="img-aviso" src="/assets/exclamacao.png" alt="exclamação">
+                    <p class="aviso">Apenas letras minúsculas e sem acento.</p>
+                </div>
+
+                <div class="entrada-botao">
+                    <button id="botao-crip">Criptografar</button>
+                    <button id="botao-descrip">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="saida-container">
+            <div class="saida-conteudo">
+                <div id="saida-area">
+                    <div class="saida-imagem" id="esconder-imagem">
+                        <img class="carinha" src="/assets/carinha curioso.svg" alt="icone aviso">
+                    </div>
+                    <p id="saida-vazio">Nenhuma mensagem encontrada</p>
+                    <p id="resultado">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="criacao">Por Larissa Farias. 2024.</footer>
+
+    <script src="/styles/app.js"></script>
+</body>
+</html>
